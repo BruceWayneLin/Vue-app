@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     fetchCustomers () {
-      this.$http.get('https://newsapi.org/v1/sources?language=en')
+      this.$http.get('http://localhost:3000/result')
       .then(function (response) {
         console.log(response.body)
       })
